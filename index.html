@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForgePlay - Documentos Legais</title>
+    <title>ForgePlay — Sua Arena de Jogos</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -16,49 +16,147 @@
             justify-content: center;
             padding: 20px;
         }
-        .container { max-width: 600px; width: 100%; text-align: center; }
-        .logo { font-size: 36px; font-weight: 900; margin-bottom: 10px; }
+        .container { max-width: 650px; width: 100%; text-align: center; }
+        .logo { font-size: 40px; font-weight: 900; margin-bottom: 8px; letter-spacing: -1px; }
         .logo span { color: #FF6B35; }
-        .subtitle { color: #A8A39E; font-size: 14px; margin-bottom: 40px; }
-        .cards { display: grid; gap: 16px; }
+        
+        .company-info { 
+            color: #A8A39E; 
+            font-size: 12px; 
+            margin-bottom: 30px;
+            line-height: 1.6;
+            background: #1C1C2720;
+            border: 1px solid #262633;
+            border-radius: 12px;
+            padding: 15px 20px;
+        }
+        .company-info strong { color: #F2EFE9; }
+        
+        .section-title { 
+            color: #A8A39E; 
+            font-size: 11px; 
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        
+        .cards { display: grid; gap: 14px; margin-bottom: 30px; }
+        .cards-small { grid-template-columns: 1fr 1fr; }
+        
         .card {
-            background: #1C1C27; border: 1px solid #262633; border-radius: 16px;
-            padding: 30px 25px; text-decoration: none; display: block;
-            transition: all 0.3s ease; text-align: left;
+            background: #1C1C27; 
+            border: 1px solid #262633; 
+            border-radius: 16px;
+            padding: 25px 20px; 
+            text-decoration: none; 
+            display: block;
+            transition: all 0.3s ease; 
+            text-align: left;
         }
         .card:hover { border-color: #FF6B35; transform: translateY(-2px); }
-        .card-icon { font-size: 28px; margin-bottom: 12px; }
-        .card h2 { color: #FF6B35; font-size: 18px; margin-bottom: 6px; }
-        .card p { color: #A8A39E; font-size: 13px; line-height: 1.5; }
-        .footer { color: #625E58; font-size: 11px; margin-top: 40px; }
+        .card-icon { font-size: 24px; margin-bottom: 10px; }
+        .card h2 { color: #FF6B35; font-size: 16px; margin-bottom: 4px; }
+        .card p { color: #A8A39E; font-size: 12px; line-height: 1.5; }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .feature-item {
+            background: #1C1C27;
+            border: 1px solid #262633;
+            border-radius: 12px;
+            padding: 15px;
+        }
+        .feature-item .emoji { font-size: 22px; margin-bottom: 6px; }
+        .feature-item h3 { color: #F2EFE9; font-size: 13px; margin-bottom: 4px; }
+        .feature-item p { color: #A8A39E; font-size: 11px; line-height: 1.4; }
+        
+        .footer { 
+            color: #625E58; 
+            font-size: 11px; 
+            line-height: 1.6;
+            border-top: 1px solid #262633;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Logo -->
         <div class="logo">Forge<span>Play</span></div>
-        <p class="subtitle">Documentos Legais e Políticas</p>
         
-        <div class="cards">
+        <!-- Informações da Empresa -->
+        <div class="company-info">
+            <strong>NativeForge Tecnologia</strong><br>
+            Carlos Eduardo Cabral de Almeida · MEI<br>
+            CNPJ: 52.933.093/0001-00<br>
+            Maringá — PR<br>
+            contato.nativeforge@gmail.com
+        </div>
+        
+        <!-- Nossos Jogos -->
+        <p class="section-title">Nossos Jogos</p>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="emoji">🧠</div>
+                <h3>Jogo da Memória</h3>
+                <p>Encontre todos os pares antes do tempo acabar</p>
+            </div>
+            <div class="feature-item">
+                <div class="emoji">🔍</div>
+                <h3>Caça-Palavras</h3>
+                <p>Encontre palavras escondidas na grade</p>
+            </div>
+            <div class="feature-item">
+                <div class="emoji">💣</div>
+                <h3>Campo Minado</h3>
+                <p>Revele todas as células sem explodir</p>
+            </div>
+            <div class="feature-item">
+                <div class="emoji">🔢</div>
+                <h3>2048</h3>
+                <p>Combine blocos até alcançar o 2048</p>
+            </div>
+        </div>
+        
+        <!-- Documentos -->
+        <p class="section-title">Documentos Legais</p>
+        <div class="cards cards-small">
             <a href="privacy-policy.html" class="card">
                 <div class="card-icon">🔒</div>
-                <h2>Política de Privacidade</h2>
-                <p>Como coletamos, usamos e protegemos seus dados no ForgePlay.</p>
+                <h2>Privacidade</h2>
+                <p>Como protegemos seus dados</p>
             </a>
-            
             <a href="terms-of-service.html" class="card">
                 <div class="card-icon">📜</div>
                 <h2>Termos de Uso</h2>
-                <p>Regras e condições para uso do aplicativo ForgePlay.</p>
+                <p>Regras do jogo</p>
             </a>
-            
+        </div>
+        
+        <!-- Links adicionais -->
+        <div class="cards">
             <a href="delete-account.html" class="card">
                 <div class="card-icon">🗑️</div>
                 <h2>Excluir Conta</h2>
                 <p>Instruções para solicitar a exclusão da sua conta e dados.</p>
             </a>
+            <a href="about.html" class="card">
+                <div class="card-icon">🏢</div>
+                <h2>Sobre a Empresa</h2>
+                <p>Informações da NativeForge, contato e detalhes sobre nossos aplicativos.</p>
+            </a>
         </div>
         
-        <p class="footer">© 2026 NativeForge — ForgePlay. Todos os direitos reservados.</p>
+        <!-- Rodapé -->
+        <p class="footer">
+            © 2026 NativeForge • CNPJ 52.933.093/0001-00 • Maringá — PR<br>
+            Desenvolvimento de aplicativos móveis e soluções digitais.
+        </p>
     </div>
 </body>
 </html>
